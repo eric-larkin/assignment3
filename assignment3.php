@@ -24,32 +24,32 @@
 		<div class="show">
 			<h3>Defaults after instantiation:</h3>
 			<?php
-				echo "<h5>Parent: " . $parent . "</h5><br />";
-				echo "<h5>Child: " . $child . "</h5><br />"
+				echo "<h5>Parent: " . $parent . "</h5>";
+				echo "<h5>Child: " . $child . "</h5>"
 			?>
 		</div>
 
 		<div class="show">
 			<h3>Adding songs....</h3>
-			<h5>Parent: </h5> <br />
+			<h5>Parent: </h5>
 			<p>
 				Adding song 'parent1Song' by 'parent1Artist'<br />
 				Adding song 'parent2Song' by 'parent2Artist'
 				<?php
 					$parent->addSong("parent1Song", "parent1Artist");
 					$parent->addSong("parent2Song", "parent2Artist");
-					echo "<h5>Parent: " . $parent . "</h5><br />";
+					echo "<h5>Parent: " . $parent . "</h5>";
 				?>
 			</p>
 
-			<h5>Child: </h5> <br />
+			<h5>Child: </h5>
 			<p>
 				Adding song 'child1Song' by 'child1Artist'
 				Adding song 'child2Song' by 'child2Artist'
 				<?php
 					$child->addSong("child1Song", "child1Artist");
 					$child->addSong("child2Song", "child2Artist");
-					echo "<h5>Child: " . $child . "</h5><br />"
+					echo "<h5>Child: " . $child . "</h5>"
 				?>
 			</p>
 		</div>
@@ -59,8 +59,8 @@
 			<?php
 				$parent->removeSong("parent1Song");
 				$child->removeSong("child1Song");
-				echo "<h5>Parent: " . $parent . "</h5><br />";
-				echo "<h5>Child: " . $child . "</h5><br />"
+				echo "<h5>Parent: " . $parent . "</h5>";
+				echo "<h5>Child: " . $child . "</h5>"
 			?>
 		</div>
 
