@@ -24,7 +24,7 @@
 		public function __toString() {
 			$returnable = "";
 			if(isset($this->songArtistsArray)) {
-				$returnable .= $this->userName . "'s playlist";
+				$returnable .= $this->userName . "'s playlist:::";
 				foreach ($this->songArtistsArray as $key => $value) {
 					$returnable .= $key . " -> " . $value;
 				}
